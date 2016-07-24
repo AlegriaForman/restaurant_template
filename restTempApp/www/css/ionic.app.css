@@ -9827,6 +9827,9 @@ a.button {
 .ion-minus-round:before {
   content: url("../img/shakecon.png") !important; }
 
+.bar-header {
+  display: none; }
+
 h1 {
   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
   font-size: 2em;
@@ -9843,14 +9846,15 @@ h1 {
   width: 100%; }
 
 .neon-img {
-  width: 100%; }
+  width: 80%; }
 
 .home-page {
   margin-left: 5%; }
 
 .logo {
   max-width: 1200px;
-  margin-bottom: 5%; }
+  margin-bottom: 5%;
+  margin-top: 70px; }
 
 .paul-div {
   max-width: 38%; }
@@ -9883,4 +9887,4 @@ h1 {
     width: 30%;
     display: inline-block; }
   .paul-image {
-    max-width: 325px; } }
+    max-width: 280px; } }
