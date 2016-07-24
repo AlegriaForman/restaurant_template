@@ -20,3 +20,100 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
+
+h1 {
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-size: 2em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+}
+
+.teriyaki, .burger, .shake {
+  width: 280px;
+  height: auto;
+  display: inline-block;
+  text-align: center;
+  border: 2px solid red;
+  padding: 5px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 2%;
+}
+
+.burger-link, .teriyaki-link, .shake-link {
+  width: 100%;
+}
+
+img {
+  width: 270px;
+}
+
+.home-page {
+  margin-left: 5%;
+}
+
+.logo {
+  max-width: 1200px;
+  margin-bottom: 5%;
+}
+
+.main-option {
+  max-width: 1200px;
+}
+
+.paul-div {
+  max-width: 38%;;
+  border: 2px solid red;
+}
+
+.paul-image {
+  width: 100%;
+  float: left;
+}
+
+.contact-info {
+  width: 80%;
+    h1 {
+      margin-left: 2%;
+      padding: 0;
+      border: 2px solid red;
+    }
+    p {
+      padding: 0 20px;
+      font-size: 1em;
+      border: 2px solid red;
+    }
+}
+
+.menu-option {
+    width: 75%;
+  }
+
+#social-icons {
+  margin-right: 0;
+}
+
+.fa-facebook, .fa-yelp, .fa-zomato {
+  display: inline-block;
+  width: 70px;
+  height: auto;
+  text-align: center;
+  margin-top: 50%;
+}
+
+#social-icons:hover .fa {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/***MEDIA QUERIES**/
+/* for 768px or more portrait */
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-top: 8%;
+  }
+}

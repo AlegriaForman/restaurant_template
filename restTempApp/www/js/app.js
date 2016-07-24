@@ -38,7 +38,9 @@ angular.module('starter', ['ionic'])
       templateUrl: 'templates/home.html'
       }
     }
-  })
+  });
 
   $urlRouterProvider.otherwise('/tab/home');
+
+  // $ionicConfigProvider.tabs.position('top');
 });
