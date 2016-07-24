@@ -9823,22 +9823,11 @@ h1 {
   font-weight: 500;
   line-height: 26.4px; }
 
-.teriyaki, .burger, .shake {
-  width: 280px;
-  height: auto;
-  display: inline-block;
-  text-align: center;
-  border: 2px solid red;
-  padding: 5px;
-  margin-bottom: 20px;
-  margin-left: 10px;
-  margin-right: 2%; }
-
 .burger-link, .teriyaki-link, .shake-link {
   width: 100%; }
 
-img {
-  width: 270px; }
+.neon-img {
+  width: 100%; }
 
 .home-page {
   margin-left: 5%; }
@@ -9846,9 +9835,6 @@ img {
 .logo {
   max-width: 1200px;
   margin-bottom: 5%; }
-
-.main-option {
-  max-width: 1200px; }
 
 .paul-div {
   max-width: 38%;
@@ -9870,7 +9856,7 @@ img {
     border: 2px solid red; }
 
 .menu-option {
-  width: 75%; }
+  width: 80%; }
 
 #social-icons {
   margin-right: 0; }
@@ -9892,4 +9878,12 @@ img {
 /* for 768px or more portrait */
 @media screen and (min-width: 768px) {
   .logo {
-    margin-top: 8%; } }
+    margin-top: 8%; }
+  .menu-option {
+    width: 96%;
+    margin-left: 2%; }
+  .neon-img {
+    width: 30%;
+    display: inline-block; }
+  .paul-image {
+    max-width: 325px; } }
