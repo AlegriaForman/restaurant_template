@@ -9827,6 +9827,10 @@ a.button {
 .ion-minus-round:before {
   content: url("../img/shakecon.png") !important; }
 
+.tabs-positive > .tabs {
+  background-color: #EDCF1F;
+  border: 10px solid green; }
+
 .bar-header {
   display: none; }
 
@@ -9851,6 +9855,9 @@ h1 {
 .home-page {
   margin-left: 5%; }
 
+ion-content {
+  background-color: #1ecf1f; }
+
 .logo {
   max-width: 1200px;
   margin-bottom: 5%;
@@ -9874,6 +9881,11 @@ h1 {
 
 .menu-option {
   width: 80%; }
+
+.burger-div, .teriyaki-div, .shakes-div {
+  margin-top: 80px;
+  margin-left: 20px;
+  background-color: #edcf1f; }
 
 /***MEDIA QUERIES**/
 /* for 768px or more portrait */

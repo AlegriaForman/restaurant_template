@@ -38,6 +38,33 @@ angular.module('starter', ['ionic'])
       templateUrl: 'templates/home.html'
       }
     }
+  })
+
+  .state('tabs.burger', {
+    url: '/burger',
+    views: {
+      'burger-tab': {
+      templateUrl: 'templates/burger.html'
+      }
+    }
+  })
+
+  .state('tabs.teriyaki', {
+    url: '/teriyaki',
+    views: {
+      'teriyaki-tab': {
+      templateUrl: 'templates/teriyaki.html'
+      }
+    }
+  })
+
+  .state('tabs.shakes', {
+    url: '/shakes',
+    views: {
+      'shakes-tab': {
+      templateUrl: 'templates/shakes.html'
+      }
+    }
   });
 
   $urlRouterProvider.otherwise('/tab/home');
