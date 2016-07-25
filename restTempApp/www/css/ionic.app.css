@@ -9828,7 +9828,7 @@ a.button {
   content: url("../img/shakecon.png") !important; }
 
 .tabs-positive > .tabs {
-  background-color: #EDCF1F;
+  background-color: #EDCF1F !important;
   border: 10px solid green; }
 
 .bar-header {
@@ -9849,8 +9849,13 @@ h1 {
 .burger-link, .teriyaki-link, .shake-link {
   width: 100%; }
 
+.menu-option {
+  max-width: 300px;
+  margin-left: 20%; }
+
 .neon-img {
-  width: 80%; }
+  width: 80%;
+  border-radius: 5%; }
 
 .home-page {
   margin-left: 5%; }
@@ -9858,29 +9863,42 @@ h1 {
 ion-content {
   background-color: #1ecf1f; }
 
+.pane {
+  background-color: #1ecf1f; }
+
 .logo {
-  max-width: 1200px;
+  max-width: 270px;
   margin-bottom: 5%;
-  margin-top: 70px; }
+  margin-top: 70px;
+  margin-left: 20%; }
 
 .paul-div {
   max-width: 38%; }
 
 .paul-image {
   width: 100%;
-  float: left; }
+  float: left;
+  margin-right: 5px;
+  border-radius: 5%; }
 
 .contact-info {
   width: 80%; }
   .contact-info h1 {
-    margin-left: 2%;
-    padding: 0; }
+    margin-left: 2%; }
   .contact-info p {
     padding: 0 20px;
     font-size: 1em; }
 
+.social-links {
+  width: 5%;
+  display: inline-block; }
+
+.main-content {
+  max-width: 600px; }
+
 .menu-option {
-  width: 80%; }
+  width: 50%;
+  display: inline-block; }
 
 .burger-div, .teriyaki-div, .shakes-div {
   margin-top: 80px;
@@ -9890,13 +9908,27 @@ ion-content {
 /***MEDIA QUERIES**/
 /* for 768px or more portrait */
 @media screen and (min-width: 768px) {
+  .contact-info {
+    width: 100%; }
   .logo {
-    margin-top: 8%; }
+    margin-top: 8%;
+    max-width: 1200px;
+    margin-bottom: 5%;
+    margin-top: 70px; }
+  .social-links {
+    width: auto;
+    display: inline-block;
+    margin-left: 8%; }
+  .main-content {
+    max-width: 1224px; }
   .menu-option {
+    display: block;
+    max-width: 1200px;
     width: 96%;
     margin-left: 2%; }
   .neon-img {
     width: 30%;
     display: inline-block; }
   .paul-image {
-    max-width: 280px; } }
+    max-width: 280px;
+    clear: both; } }
