@@ -9842,6 +9842,9 @@ h1 {
   font-weight: 500;
   line-height: 26.4px; }
 
+p {
+  margin: 0 0 0px; }
+
 .tab-nav {
   top: 0;
   height: 65px; }
@@ -9858,7 +9861,8 @@ h1 {
   border-radius: 5%; }
 
 .home-page {
-  margin-left: 5%; }
+  margin-left: 5%;
+  min-width: 320px; }
 
 ion-content {
   background-color: #1ecf1f; }
@@ -9885,9 +9889,6 @@ ion-content {
   width: 80%; }
   .contact-info h1 {
     margin-left: 2%; }
-  .contact-info p {
-    padding: 0 20px;
-    font-size: 1em; }
 
 .social-links {
   width: 5%;
@@ -9908,6 +9909,8 @@ ion-content {
 /***MEDIA QUERIES**/
 /* for 768px or more portrait */
 @media screen and (min-width: 768px) {
+  h1 {
+    padding-top: 30px; }
   .contact-info {
     width: 100%; }
   .logo {
