@@ -1,5 +1,12 @@
 <ion-view hide-nav-bar="true">
-<ion-content class="shakes-page padding">
+<ion-content class="shakes-page padding" ng-controller="GalleryCtrl">
+
+  <a class="item item-list-detail">
+	 <ion-scroll direction="x">
+	   <img ng-repeat="image in shakesImages" ng-src="{{image.src}}" ng-click="showShakesImages($index)" class="image-list-thumb"/>
+	 </ion-scroll>
+   </a>
+
   <div class="shakes-div">
 	<h1>SHAKES</h1>
 

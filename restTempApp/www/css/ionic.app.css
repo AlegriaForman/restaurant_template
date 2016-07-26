@@ -9836,18 +9836,24 @@ a.button {
 
 h1 {
   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
-  font-size: 2em;
+  font-size: 1.5em;
   font-style: normal;
   font-variant: normal;
   font-weight: 500;
-  line-height: 26.4px; }
+  line-height: 26.4px;
+  margin-left: 10px; }
+
+h4 {
+  font-size: 1em;
+  margin-left: 20px; }
 
 p {
-  margin: 0 0 0px; }
+  margin: 0 0 0 20px;
+  font-size: .9em; }
 
 .tab-nav {
   top: 0;
-  height: 65px; }
+  height: 78px; }
 
 .burger-link, .teriyaki-link, .shake-link {
   width: 100%; }
@@ -9873,11 +9879,12 @@ ion-content {
 .logo {
   max-width: 270px;
   margin-bottom: 5%;
-  margin-top: 70px;
+  margin-top: 100px;
   margin-left: 20%; }
 
 .paul-div {
-  max-width: 38%; }
+  max-width: 38%;
+  margin-top: 100px; }
 
 .paul-image {
   width: 100%;
@@ -9887,8 +9894,6 @@ ion-content {
 
 .contact-info {
   width: 80%; }
-  .contact-info h1 {
-    margin-left: 2%; }
 
 .social-links {
   width: 5%;
@@ -9902,15 +9907,40 @@ ion-content {
   display: inline-block; }
 
 .burger-div, .teriyaki-div, .shakes-div {
-  margin-top: 80px;
+  margin-top: 50px;
   margin-left: 20px;
   background-color: #edcf1f; }
+
+.item-list-detail {
+  margin-top: 100px;
+  text-align: center;
+  background-color: rgba(254, 255, 254, 0.3); }
+
+.image-list-thumb {
+  padding: 2px 2px 2px 2px;
+  height: 100px; }
+
+.image-modal {
+  width: 100% !important;
+  height: 100%;
+  top: 0 !important;
+  left: 0 !important; }
+
+.image {
+  width: 100%;
+  height: 600px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center, center; }
+
+.transparent {
+  background: rgba(0, 0, 0, 0.7); }
 
 /***MEDIA QUERIES**/
 /* for 768px or more portrait */
 @media screen and (min-width: 768px) {
   h1 {
-    padding-top: 30px; }
+    padding-top: 5px; }
   .contact-info {
     width: 100%; }
   .logo {

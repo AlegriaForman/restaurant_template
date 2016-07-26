@@ -1,5 +1,12 @@
 <ion-view hide-nav-bar="true">
-<ion-content class="teriyaki-page padding">
+<ion-content class="teriyaki-page padding" ng-controller="GalleryCtrl">
+
+  <a class="item item-list-detail">
+	 <ion-scroll direction="x">
+	   <img ng-repeat="image in teriyakiImages" ng-src="{{image.src}}" ng-click="showTeriyakiImages($index)" class="image-list-thumb"/>
+	 </ion-scroll>
+   </a>
+
   <div class="teriyaki-div">
 	<h1>TERIYAKI</h1>
 	<p>Dishes with ** are server with Rice and Salad</p>
