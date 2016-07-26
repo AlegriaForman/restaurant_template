@@ -70,4 +70,88 @@ angular.module('starter', ['ionic'])
   $urlRouterProvider.otherwise('/tab/home');
 
   // $ionicConfigProvider.tabs.position('top');
+})
+
+.controller('GalleryCtrl', function($scope, $ionicBackdrop, $ionicModal, $ionicSlideBoxDelegate, $ionicScrollDelegate) {
+
+  $scope.burgerImages = [{
+  src: 'img/paulsburger.jpg'
+  }, {
+    src: 'img/paulsburger2.jpg'
+  }, {
+    src: 'img/burgerguac.jpg'
+  }, {
+    src: 'img/burgermush.jpg'
+  }];
+
+  $scope.teriyakiImages = [{
+  src: 'img/almondchx.jpg'
+  }, {
+    src: 'img/beefbroccoli.jpg'
+  }, {
+  src: 'img/chowmein.jpg'
+  }, {
+    src: 'img/chxteriyaki.jpg'
+  }, {
+    src: 'img/generaltsao.jpg'
+  }, {
+    src: 'img/honeysesamechx.jpg'
+  }, {
+    src: 'img/kungpaochx.jpg'
+  }, {
+    src: 'img/mongobeef.jpg'
+  }, {
+    src: 'img/yakisoba.jpg'
+  }];
+
+  $scope.shakesImages = [{
+  src: 'img/chxnuggets.jpg'
+  }, {
+    src: 'img/mushroom.jpg'
+  }, {
+    src: 'img/onionrings.jpg'
+  }, {
+    src: 'img/chxstrips.jpg'
+  }];
+
+  $scope.zoomMin = 1;
+
+  $scope.showBurgerImages = function(index) {
+  $scope.activeSlide = index;
+  $scope.showModal('templates/burger-gallery-zoomview.html');
+  };
+
+  $scope.showTeriyakiImages = function(index) {
+  $scope.activeSlide = index;
+  $scope.showModal('templates/teriyaki-gallery-zoomview.html');
+  };
+
+    $scope.showShakesImages = function(index) {
+  $scope.activeSlide = index;
+  $scope.showModal('templates/shakes-gallery-zoomview.html');
+  };
+
+
+  $scope.showModal = function(templateUrl) {
+    $ionicModal.fromTemplateUrl(templateUrl, {
+      scope: $scope
+    }).then(function(modal) {
+      $scope.modal = modal;
+      $scope.modal.show();
+    });
+  };
+
+  $scope.closeModal = function() {
+    $scope.modal.hide();
+    $scope.modal.remove();
+  };
+
+  $scope.updateSlideStatus = function(slide) {
+    var zoomFactor = $ionicScrollDelegate.$getByHandle('scrollHandle' + slide).getScrollPosition().zoom;
+    if (zoomFactor == $scope.zoomMin) {
+      $ionicSlideBoxDelegate.enableSlide(true);
+    } else {
+      $ionicSlideBoxDelegate.enableSlide(false);
+    }
+  };
 });

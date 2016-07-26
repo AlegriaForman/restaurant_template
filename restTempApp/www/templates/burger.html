@@ -1,5 +1,12 @@
 <ion-view hide-nav-bar="true">
-<ion-content class="burger-page padding">
+<ion-content class="burger-page padding" ng-controller="GalleryCtrl">
+
+   <a class="item item-list-detail">
+	 <ion-scroll direction="x">
+	   <img ng-repeat="image in burgerImages" ng-src="{{image.src}}" ng-click="showBurgerImages($index)" class="image-list-thumb"/>
+	 </ion-scroll>
+   </a>
+
   <div class="burger-div">
 	<h1>BURGERS</h1>
 	<p>*All Burgers come with Fries*</p>
@@ -45,5 +52,5 @@
 
 	<p>(Tartar, 1000 Island, Ranch, BBQ Sauce Available</p>
   </div>
-</ion-contetnt>
+</ion-content>
 </ion-view>
