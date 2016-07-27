@@ -38,8 +38,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 }
 
 .tabs-positive > .tabs {
-  background-color: #EDCF1F !important;
-  border: 10px solid green;
+  background-color: #1ECF1F !important;
 }
 
 .bar-header {
@@ -54,6 +53,8 @@ h1 {
   font-weight: 500;
   line-height: 26.4px;
   margin-left: 10px;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 h4 {
@@ -63,7 +64,9 @@ h4 {
 
 p {
   margin: 0 0 0 20px;
+  padding: 0;
   font-size: .9em;
+  line-height: 12px;
 }
 
 .tab-nav {
@@ -99,15 +102,14 @@ ion-content {
 }
 
 .logo {
-  max-width: 270px;
-  margin-bottom: 5%;
-  margin-top: 100px;
-  margin-left: 20%;
+  width: auto;
+  margin-left: 3%;
+  margin-top: -90px;
 }
 
 .paul-div {
-  max-width: 38%;
-  margin-top: 100px;
+  max-width: 30%;
+  margin-top: 90px;
 }
 
 .paul-image {
@@ -122,34 +124,45 @@ ion-content {
 }
 
 .social-links {
-  width: 5%;
-  display: inline-block;
+  width: 50px;
+  margin-left: 85%;
+  margin-right: 5px;
+  position: absolute;
+  top: 20%;
+}
+
+.facebook .yelp .zomato {
+  width: 50px;
+  height: 50px;
+
 }
 
 .main-content {
   max-width: 600px;
+  margin-top: 250px;
 }
 
 .menu-option {
     width: 50%;
     display: inline-block;
+    border: solid 2px red;
   }
 
 .burger-div, .teriyaki-div, .shakes-div {
-  margin-top: 50px;
-  margin-left: 20px;
-  background-color: rgba(237, 207, 31, 1);
+  margin-top: 30px;
+  padding-left: 10px;
+  background: url(../img/background.jpg) 100% no-repeat;
 }
 
 .item-list-detail {
-  margin-top: 100px;
+  margin-top: 220px;
   text-align: center;
   background-color: rgba(254, 255, 254, 0.3);
 }
 
 .image-list-thumb {
   padding: 2px 2px 2px 2px;
-  height: 100px;
+  height: 185px;
 }
 
 .image-modal {
@@ -171,6 +184,13 @@ ion-content {
   background: rgba(0,0,0,0.7);
 }
 
+  .bar-subheader {
+    height: 165px;
+    margin-top: 35px;
+    background: url(../img/background.jpg) no-repeat center center fixed;
+  
+  }
+
 /***MEDIA QUERIES**/
 /* for 768px or more portrait */
 @media screen and (min-width: 768px) {
@@ -184,16 +204,23 @@ ion-content {
   }
 
   .logo {
-    margin-top: 8%;
-    max-width: 1200px;
-    margin-bottom: 5%;
-    margin-top: 70px;
+    width: auto;
+    margin-top: -80px;
+
+  }
+
+  .bar-subheader {
+    height: 200px;
+    margin-top: 30px;
+    background: url(../img/background.jpg) no-repeat center center fixed;
+    background-size: 100% 100%;
   }
 
   .social-links {
     width: auto;
     display: inline-block;
     margin-left: 8%;
+    border: solid 2px red;
   }
 
   .main-content {
@@ -212,8 +239,13 @@ ion-content {
     display: inline-block;
   }
 
-  .paul-image {
-    max-width: 280px;
-    clear: both;
+  .paul-div {
+    width: 25%;
+    margin-top: 90px;
+    margin-bottom: 20px;
+  }
+
+  .item-list-detail {
+  margin-top: 220px;
   }
 }
