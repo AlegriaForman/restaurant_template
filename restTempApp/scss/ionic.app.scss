@@ -45,6 +45,10 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   display: none;
 }
 
+.pane {
+  min-width: 310px;
+}
+
 h1 {
   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
   font-size: 1.5em;
@@ -63,7 +67,7 @@ h4 {
 }
 
 p {
-  margin: 0 0 0 105px;
+  margin: 0 0 0 20px;
   padding: 0;
   font-size: .9em;
   line-height: 12px;
@@ -72,10 +76,6 @@ p {
 .tab-nav {
   top: 0;
   height: 78px;
-}
-
-.burger-link, .teriyaki-link, .shake-link {
-  width: 100%;
 }
 
 .menu-option {
@@ -101,32 +101,24 @@ ion-content {
   background-color: rgba(30, 207, 31, 1);
 }
 
-.logo {
-  width: auto;
-  margin-left: 3%;
-  margin-top: -90px;
+.paul-div {
+  display: inline-block;
+  max-width: 25%;
 }
 
-.paul-div {
-  max-width: 30%;
-  margin-top: 90px;
+.contact-info {
+  display: inline-block;
+  max-width: 50%;
 }
 
 .paul-image {
   width: 100%;
-  float: left;
-  margin-right: 10px;
-  border-radius: 5%;
-}
-
-.contact-info {
-  width: 80%;
 }
 
 .social-links {
   width: 50px;
   position: fixed;
-  top: 20%;
+  top: 10%;
   right: 0;
 }
 
@@ -144,7 +136,6 @@ ion-content {
 .menu-option {
     width: 50%;
     display: inline-block;
-    border: solid 2px red;
   }
 
 .burger-div, .teriyaki-div, .shakes-div {
@@ -194,46 +185,20 @@ ion-content {
     height: 165px;
     margin-top: 35px;
     background: url(../img/background.jpg) no-repeat center center fixed;
-
   }
-
-/***MEDIA QUERIES**/
-/* for 360px or more portrait */
-@media screen and (min-width: 360px) {
- .logo {
-    p {
-      margin-left: 120px;
-    }
-  }
-  .social-links {
-  width: 50px;
-  margin-left: 85%;
-  margin-right: 5px;
-  position: absolute;
-  top: 20%;
-  }
- }
 
 /***MEDIA QUERIES**/
 /* for 414px or more portrait */
 @media screen and (min-width: 414px) {
- .logo {
+
+  .contact-info {
     p {
-      margin-left: 160px;
+      margin-left: 60px;
     }
   }
-  .bar-subheader {
-    height: 150px;
-  }
+
   .item-list-detail {
   margin-top: 240px;
-  }
-  .social-links {
-  width: 50px;
-  margin-left: 88%;
-  margin-right: 5px;
-  position: absolute;
-  top: 40%;
   }
 }
 
@@ -243,16 +208,6 @@ ion-content {
 
   h1 {
     padding-top: 25px;
-  }
-
-  .contact-info {
-    width: 100%;
-  }
-
-  .logo {
-    width: auto;
-    margin-top: -80px;
-
   }
 
   .bar-subheader {
@@ -279,13 +234,6 @@ ion-content {
     }
   }
 
-  .social-links {
-    width: auto;
-    display: inline-block;
-    margin-left: 88%;
-    border: solid 2px red;
-  }
-
   .main-content {
 
     max-width: 1224px;
@@ -305,31 +253,22 @@ ion-content {
   }
 
   .paul-div {
-    max-width: 27%;
-    margin-top: 80px;
-    margin-bottom: 20px;
+    margin-left: 25%;
   }
 
   .item-list-detail {
   margin-top: 270px;
   }
-
-  .social-links {
-  width: 50px;
-  margin-left: 93%;
-  margin-right: 5px;
-  position: absolute;
-  top: 50%;
-  }
 }
 
 /***MEDIA QUERIES**/
-/* for 1180px or more portrait */
-@media screen and (min-width: 1180px) {
+/* for 1080px or more portrait */
+@media screen and (min-width: 1080px) {
 
-  .logo {
-    margin-left: 200px;
-  }
+    .paul-div {
+      max-width: 270px;
+      margin-left: 30%;
+    }
 
     .burger-div, .teriyaki-div, .shakes-div {
     margin-top: 20px;
@@ -337,16 +276,17 @@ ion-content {
     background: url(../img/background.jpg) 100% no-repeat;
     background-size: 100% 100%;
     h1 {
-      font-size: 1.85em;
-      margin-left: 60px;
+      font-size: 2em;
+      margin-left: 35%;
+      margin-bottom: 10px;
     }
     h4 {
       font-size: 1.4em;
-      margin-left: 70px;
+      margin-left: 37%;
     }
     p {
       font-size: 1em;
-      margin-left: 75px;
+      margin-left: 37%;
     }
   }
 }
