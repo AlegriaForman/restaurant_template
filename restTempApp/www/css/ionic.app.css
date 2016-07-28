@@ -9999,6 +9999,8 @@ ion-content {
   .paul-div {
     max-width: 270px;
     margin-left: 30%; }
+  .paul-image {
+    margin-top: -10px; }
   .burger-div, .teriyaki-div, .shakes-div {
     margin-top: 20px;
     padding-left: 10px;
