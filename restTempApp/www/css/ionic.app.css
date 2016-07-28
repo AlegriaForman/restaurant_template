@@ -9842,14 +9842,14 @@ h1 {
   line-height: 26.4px;
   margin-left: 10px;
   margin-bottom: 0;
-  padding: 0; }
+  padding-top: 5px; }
 
 h4 {
   font-size: 1em;
   margin-left: 20px; }
 
 p {
-  margin: 0 0 0 20px;
+  margin: 0 0 0 105px;
   padding: 0;
   font-size: .9em;
   line-height: 12px; }
@@ -9891,7 +9891,7 @@ ion-content {
 .paul-image {
   width: 100%;
   float: left;
-  margin-right: 5px;
+  margin-right: 10px;
   border-radius: 5%; }
 
 .contact-info {
@@ -9899,7 +9899,7 @@ ion-content {
 
 .social-links {
   width: 50px;
-  margin-left: 85%;
+  margin-left: 80%;
   margin-right: 5px;
   position: absolute;
   top: 20%; }
@@ -9918,12 +9918,17 @@ ion-content {
   border: solid 2px red; }
 
 .burger-div, .teriyaki-div, .shakes-div {
-  margin-top: 30px;
+  margin-top: 20px;
   padding-left: 10px;
-  background: url(../img/background.jpg) 100% no-repeat; }
+  background: url(../img/background.jpg) 100% no-repeat;
+  background-size: 100% 100%; }
+  .burger-div h1, .teriyaki-div h1, .shakes-div h1 {
+    margin-top: 0; }
+  .burger-div p, .teriyaki-div p, .shakes-div p {
+    margin-left: 20px; }
 
 .item-list-detail {
-  margin-top: 220px;
+  margin-top: 250px;
   text-align: center;
   background-color: rgba(254, 255, 254, 0.3); }
 
@@ -9953,24 +9958,63 @@ ion-content {
   background: url(../img/background.jpg) no-repeat center center fixed; }
 
 /***MEDIA QUERIES**/
+/* for 360px or more portrait */
+@media screen and (min-width: 360px) {
+  .logo p {
+    margin-left: 120px; }
+  .social-links {
+    width: 50px;
+    margin-left: 85%;
+    margin-right: 5px;
+    position: absolute;
+    top: 20%; } }
+
+/***MEDIA QUERIES**/
+/* for 414px or more portrait */
+@media screen and (min-width: 414px) {
+  .logo p {
+    margin-left: 160px; }
+  .bar-subheader {
+    height: 150px; }
+  .item-list-detail {
+    margin-top: 240px; }
+  .social-links {
+    width: 50px;
+    margin-left: 88%;
+    margin-right: 5px;
+    position: absolute;
+    top: 40%; } }
+
+/***MEDIA QUERIES**/
 /* for 768px or more portrait */
 @media screen and (min-width: 768px) {
   h1 {
-    padding-top: 5px; }
+    padding-top: 25px; }
   .contact-info {
     width: 100%; }
   .logo {
     width: auto;
     margin-top: -80px; }
   .bar-subheader {
-    height: 200px;
+    height: 185px;
     margin-top: 30px;
     background: url(../img/background.jpg) no-repeat center center fixed;
     background-size: 100% 100%; }
+  .burger-div, .teriyaki-div, .shakes-div {
+    margin-top: 20px;
+    padding-left: 10px;
+    background: url(../img/background.jpg) 100% no-repeat;
+    background-size: 100% 100%; }
+    .burger-div h1, .teriyaki-div h1, .shakes-div h1 {
+      margin-left: 40px; }
+    .burger-div h4, .teriyaki-div h4, .shakes-div h4 {
+      margin-left: 50px; }
+    .burger-div p, .teriyaki-div p, .shakes-div p {
+      margin-left: 55px; }
   .social-links {
     width: auto;
     display: inline-block;
-    margin-left: 8%;
+    margin-left: 88%;
     border: solid 2px red; }
   .main-content {
     max-width: 1224px; }
@@ -9978,13 +10022,40 @@ ion-content {
     display: block;
     max-width: 1200px;
     width: 96%;
-    margin-left: 2%; }
+    margin-left: 3%;
+    margin-top: 300px; }
   .neon-img {
     width: 30%;
     display: inline-block; }
   .paul-div {
-    width: 25%;
-    margin-top: 90px;
+    max-width: 27%;
+    margin-top: 80px;
     margin-bottom: 20px; }
   .item-list-detail {
-    margin-top: 220px; } }
+    margin-top: 270px; }
+  .social-links {
+    width: 50px;
+    margin-left: 93%;
+    margin-right: 5px;
+    position: absolute;
+    top: 50%; } }
+
+/***MEDIA QUERIES**/
+/* for 1180px or more portrait */
+@media screen and (min-width: 1180px) {
+  .logo {
+    margin-left: 200px; }
+  .burger-div, .teriyaki-div, .shakes-div {
+    margin-top: 20px;
+    padding-left: 10px;
+    background: url(../img/background.jpg) 100% no-repeat;
+    background-size: 100% 100%; }
+    .burger-div h1, .teriyaki-div h1, .shakes-div h1 {
+      font-size: 1.85em;
+      margin-left: 60px; }
+    .burger-div h4, .teriyaki-div h4, .shakes-div h4 {
+      font-size: 1.4em;
+      margin-left: 70px; }
+    .burger-div p, .teriyaki-div p, .shakes-div p {
+      font-size: 1em;
+      margin-left: 75px; } }
