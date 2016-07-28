@@ -90,7 +90,7 @@ p {
 
 .home-page {
   margin-left: 5%;
-  min-width: 320px;
+  min-width: 310px;
 }
 
 ion-content {
@@ -125,15 +125,14 @@ ion-content {
 
 .social-links {
   width: 50px;
-  margin-left: 80%;
-  margin-right: 5px;
-  position: absolute;
+  position: fixed;
   top: 20%;
+  right: 0;
 }
 
 .facebook .yelp .zomato {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
 
 }
 
@@ -195,13 +194,13 @@ ion-content {
     height: 165px;
     margin-top: 35px;
     background: url(../img/background.jpg) no-repeat center center fixed;
-  
+
   }
 
 /***MEDIA QUERIES**/
 /* for 360px or more portrait */
 @media screen and (min-width: 360px) {
- .logo { 
+ .logo {
     p {
       margin-left: 120px;
     }
@@ -218,7 +217,7 @@ ion-content {
 /***MEDIA QUERIES**/
 /* for 414px or more portrait */
 @media screen and (min-width: 414px) {
- .logo { 
+ .logo {
     p {
       margin-left: 160px;
     }
