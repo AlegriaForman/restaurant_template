@@ -9908,15 +9908,24 @@ ion-content {
   width: 50%;
   display: inline-block; }
 
-.burger-div, .teriyaki-div, .shakes-div {
+.burger-div, .teriyaki-div, .combination-div, .shakes-div {
   margin-top: 20px;
   padding-left: 10px;
   background: url(../img/background.jpg) 100% no-repeat;
   background-size: 100% 100%; }
-  .burger-div h1, .teriyaki-div h1, .shakes-div h1 {
+  .burger-div h1, .teriyaki-div h1, .combination-div h1, .shakes-div h1 {
     margin-top: 0; }
-  .burger-div p, .teriyaki-div p, .shakes-div p {
+  .burger-div p, .teriyaki-div p, .combination-div p, .shakes-div p {
     margin-left: 20px; }
+
+.combination-div {
+  margin-top: 0px; }
+  .combination-div h1 {
+    margin-left: 35px; }
+  .combination-div h4 {
+    margin-left: 50px; }
+  .combination-div p {
+    margin-left: 60px; }
 
 .item-list-detail {
   margin-top: 250px;
@@ -10001,18 +10010,24 @@ ion-content {
     margin-left: 30%; }
   .paul-image {
     margin-top: -10px; }
-  .burger-div, .teriyaki-div, .shakes-div {
+  .burger-div, .teriyaki-div, .combination-div, .shakes-div {
     margin-top: 20px;
     padding-left: 10px;
     background: url(../img/background.jpg) 100% no-repeat;
     background-size: 100% 100%; }
-    .burger-div h1, .teriyaki-div h1, .shakes-div h1 {
+    .burger-div h1, .teriyaki-div h1, .combination-div h1, .shakes-div h1 {
       font-size: 2em;
-      margin-left: 35%;
+      margin-left: 33%;
       margin-bottom: 10px; }
-    .burger-div h4, .teriyaki-div h4, .shakes-div h4 {
+    .burger-div h4, .teriyaki-div h4, .combination-div h4, .shakes-div h4 {
       font-size: 1.4em;
-      margin-left: 37%; }
-    .burger-div p, .teriyaki-div p, .shakes-div p {
+      margin-left: 35%; }
+    .burger-div p, .teriyaki-div p, .combination-div p, .shakes-div p {
       font-size: 1em;
-      margin-left: 37%; } }
+      margin-left: 35%; }
+  .teriyaki-div {
+    float: left;
+    height: 915px; }
+  .combination-div {
+    margin-left: 150px;
+    height: 915px; } }

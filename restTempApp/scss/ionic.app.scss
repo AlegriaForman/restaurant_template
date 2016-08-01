@@ -138,7 +138,7 @@ ion-content {
     display: inline-block;
   }
 
-.burger-div, .teriyaki-div, .shakes-div {
+.burger-div, .teriyaki-div, .combination-div, .shakes-div {
   margin-top: 20px;
   padding-left: 10px;
   background: url(../img/background.jpg) 100% no-repeat;
@@ -148,6 +148,19 @@ ion-content {
   }
   p {
     margin-left: 20px;
+  }
+}
+
+.combination-div {
+  margin-top: 0px;
+  h1 {
+    margin-left: 35px;
+  }
+  h4 {
+    margin-left: 50px;
+  }
+  p {
+    margin-left: 60px;
   }
 }
 
@@ -274,23 +287,33 @@ ion-content {
       margin-top: -10px;
     }
 
-    .burger-div, .teriyaki-div, .shakes-div {
+    .burger-div, .teriyaki-div, .combination-div, .shakes-div {
     margin-top: 20px;
     padding-left: 10px;
     background: url(../img/background.jpg) 100% no-repeat;
     background-size: 100% 100%;
     h1 {
       font-size: 2em;
-      margin-left: 35%;
+      margin-left: 33%;
       margin-bottom: 10px;
     }
     h4 {
       font-size: 1.4em;
-      margin-left: 37%;
+      margin-left: 35%;
     }
     p {
       font-size: 1em;
-      margin-left: 37%;
+      margin-left: 35%;
     }
+  }
+
+  .teriyaki-div {
+    float: left;
+    height: 915px;
+  }
+
+  .combination-div {
+    margin-left: 150px;
+    height: 915px;
   }
 }
